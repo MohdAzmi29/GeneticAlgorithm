@@ -18,9 +18,6 @@ import streamlit as st
 
 df = pd.read_csv("program_ratings.csv")
 
-st.title("My Genetic Algorithm App")
-st.dataframe(df)
-
 import random
 
 POP_SIZE = 500
