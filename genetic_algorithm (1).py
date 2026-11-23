@@ -89,7 +89,6 @@ MUT_RATE = st.sidebar.slider(
     value=0.15,
     step=0.05
 )
-    st.stop()
 
 
 
