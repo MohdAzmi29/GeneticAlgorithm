@@ -15,11 +15,11 @@ st.set_page_config(
 st.header("Genetic Algorithm", divider="gray")
 
 import pandas as pd
-import streamlit as st
 
 df = pd.read_csv("program_ratings.csv")
 
 st.dataframe(df)
+
 POP_SIZE = 500
 
 MUT_RATE = 0.2
