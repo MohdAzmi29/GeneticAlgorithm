@@ -73,6 +73,9 @@ st.sidebar.header("⚙️ Algorithm Configuration")
 st.sidebar.write(
     "Tune your evolutionary parameters below:"
 )
+POP_SIZE = 50
+GENERATIONS = 100
+ELITISM_SIZE = 2
 
 CROSS_RATE = st.sidebar.slider(
     "Crossover Rate (CO_R)",
