@@ -19,7 +19,7 @@ import pandas as pd
 df = pd.read_csv("program_ratings.csv")
 
 st.dataframe(df)
-
+file_path = "program_ratings.csv"
 POP_SIZE = 500
 
 MUT_RATE = 0.2
