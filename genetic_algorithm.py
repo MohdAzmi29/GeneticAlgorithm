@@ -20,8 +20,6 @@ df = pd.read_csv("program_ratings.csv")
 
 st.dataframe(df)
 
-import random
-
 POP_SIZE = 500
 
 MUT_RATE = 0.2
