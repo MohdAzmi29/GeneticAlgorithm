@@ -13,6 +13,13 @@ st.set_page_config(
  page_title="Genetic Algorithm"
 )
 st.header("Genetic Algorithm", divider="gray")
+
+import pandas as pd
+import streamlit as st
+
+df = pd.read_csv("program_ratings.csv")
+
+st.dataframe(df)
 #POP_SIZE: Number of Chromosomes in our list.
 POP_SIZE = 500
 
