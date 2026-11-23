@@ -74,20 +74,6 @@ st.sidebar.write(
     "Tune your evolutionary parameters below:"
 )
 
-POP_SIZE = st.sidebar.slider(
-    "Population Size",
-    min_value=10,
-    max_value=200,
-    value=50
-)
-
-GENERATIONS = st.sidebar.slider(
-    "Number of Generations",
-    min_value=10,
-    max_value=500,
-    value=100
-)
-
 CROSS_RATE = st.sidebar.slider(
     "Crossover Rate (CO_R)",
     min_value=0.0,
@@ -103,18 +89,6 @@ MUT_RATE = st.sidebar.slider(
     value=0.15,
     step=0.05
 )
-
-ELITISM_SIZE = st.sidebar.slider(
-    "Elitism Size",
-    min_value=1,
-    max_value=10,
-    value=2
-)
-
-if ELITISM_SIZE >= POP_SIZE:
-    st.sidebar.error(
-        "Elitism size must be smaller than population size."
-    )
     st.stop()
 
 
